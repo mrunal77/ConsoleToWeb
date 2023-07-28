@@ -4,12 +4,13 @@
 namespace ConsoleAppToWebAPI.Controllers
 {
     [ApiController]
-    [Route("NewApi/[action]")]
+    [Route("[controller]")]
     public class NewController : ControllerBase
     {
+        [HttpGet(Name = "Get")]
         public string Get()
         {
-            return "Hii Learners";
+            return "Hello this is API";
         }
     }
 }
